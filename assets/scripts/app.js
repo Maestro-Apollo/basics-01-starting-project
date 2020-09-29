@@ -3,9 +3,9 @@ let recentNumber = defaultValue;
 
 function add(num1, num2) {
     const result = num1 + num2;
-    alert('Result is ' + result);
+    return result;
 }
 
-recentNumber = (recentNumber + 15) * 4;
+recentNumber = add(3, 7);
 let numberString = '(' + defaultValue + ' + 15) * 4';
 outputResult(recentNumber, numberString);
