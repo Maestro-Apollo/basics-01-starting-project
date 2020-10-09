@@ -1,11 +1,9 @@
-const defaultValue = 5;
+const defaultValue = 0;
 let recentNumber = defaultValue;
 
-function add(num1, num2) {
-    const result = num1 + num2;
-    return result;
+function add() {
+    recentNumber = recentNumber + userInput.value;
+    outputResult(recentNumber, '');
 }
 
-recentNumber = add(3, 7);
-let numberString = '(' + defaultValue + ' + 15) * 4';
-outputResult(recentNumber, numberString);
+addBtn.addEventListener('click', add);
