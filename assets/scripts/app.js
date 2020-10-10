@@ -1,5 +1,6 @@
 const defaultValue = 0;
 let recentNumber = defaultValue;
+let myArray = [];
 
 function getEnterNumber() {
     return parseInt(userInput.value);
@@ -15,6 +16,8 @@ function add() {
     const initNumber = recentNumber;
     recentNumber = recentNumber + enterNumber;
     readAndWrite('+', initNumber, enterNumber);
+    myArray.push(enterNumber);
+    console.log(myArray);
 }
 
 function sub() {
