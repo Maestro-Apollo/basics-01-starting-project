@@ -16,7 +16,13 @@ function add() {
     const initNumber = recentNumber;
     recentNumber = recentNumber + enterNumber;
     readAndWrite('+', initNumber, enterNumber);
-    myArray.push(enterNumber);
+    const referObject = {
+        number: enterNumber,
+        operator: 'Add',
+        previous: initNumber,
+        result: recentNumber,
+    };
+    myArray.push(referObject);
     console.log(myArray);
 }
 
